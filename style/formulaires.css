@@ -1,0 +1,299 @@
+body {
+    font-family: arial, sans-serif ;
+    background-color: #d1d1d4;
+    /* background-color: #1877f2; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100hv;
+    margin: 0;
+ }
+
+/* CSS POUR LE FORMULAIRE ou CREER UN COMPTE*/
+.form{
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 350px;
+    max-width: 350px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    margin: 100px auto;
+
+  }
+  
+  .title {
+    font-size: 20px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+   
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .msg_to_user {
+    color: rgb(77, 75, 75);
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .msg_to_user a {
+    color: royalblue;
+    font-weight: bold;
+  }
+  
+  .flex {
+    display: flex;
+    width: 96%;
+    gap:20px;
+    
+  }
+  
+  .form label,.form2 label {
+    position: relative;
+  }
+  
+  .form label input,.form2 label input {
+    width: 93%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    
+  }
+  
+  .btn_inscription {
+    border: none;
+    outline: none;
+    /* background-color: rgb(59, 93, 233); */
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .btn_inscription:hover {
+    /* background-color: rgb(56, 90, 194); */
+    background-color: #0056b3;
+    cursor: pointer;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+
+  /* CSS DU FORMULAIRE POUR SE CONNECTER */
+  
+  .btn_connexion {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    font-weight: bold;
+    background-color: #007bff;
+    /* background-color: #04659296; */
+  }
+  
+  .btn_connexion:hover {
+   /* background-color: #28a8d3; */
+   background-color: #0056b3;
+  }
+
+  .btn_forgot_password{
+   margin-bottom: 3em;
+   padding: 0.5em;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   transition: .4s ease-in-out;
+   background-color: #252525;
+   font-weight: bold;
+   color: white;
+ }
+ 
+ .btn_forgot_password:hover {
+   background-color: red;
+   color: white;
+ }
+
+  /* Le message d'erreur */
+  .message_error {
+    font-size: 14px;
+    color: rgba(255,0,0,1);
+    text-align: center;
+  }
+  
+
+ /* CSS POUR ENTRER LE MOT DE PASSE DE CONFIRMATION ENVOYE SUR L'ADRESSE E-MAIL DE L'UTILISATEUR */
+
+ 
+
+.modal {
+
+   display: block;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-p {
+   color: black;
+  margin: 10px auto;
+  width: 100%;
+  font-size: 15px;
+}
+
+
+.form-container {
+  
+   margin: 200px auto;
+   background-color: #ffffff;
+   padding: 5rem;
+   border-radius: 8px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   max-width: 500px;
+   text-align: center;
+   
+
+}
+
+.form-container h2 {
+   margin-bottom: 1rem;
+   font-size: 1.5rem;
+   color: #333;
+}
+
+.form-group label {
+   display: block;
+   margin-bottom: 0.5rem;
+   color: #555;
+   font-size: 0.9rem;
+}
+
+.form-group input {
+   width: 85%;
+   padding: 0.75rem;
+   margin: 2px 0 15px 0;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   font-size: 0.8rem;
+   color: #333;
+   text-align: center;
+   transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+   border-color: #007bff;
+   outline: none;
+}
+
+.btnConfirmation {
+   width: 90%;
+   padding: 0.3rem;
+   background-color: #007bff;
+   color: #fff;
+   border: none ;
+   font-weight: 600;
+   border-radius: 4px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.btnConfirmation:hover {
+   background-color: #0056b3;
+}
+
+.error-message {
+   color: #ff0000;
+   font-size: 0.9rem;
+   margin-bottom: 1rem;
+   text-align: center;
+   display: none;
+}
+
+.close {
+   color: #aaa;
+   float: right;
+   position: relative;
+   right: -50px;
+   top: -60px;
+   font-size: 30px;
+   /* font-weight: bold; */
+}
+
+.close:hover, 
+.close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.close a {
+    text-decoration: none;
+}
+
+.close a:hover {
+    color: black;
+}
+
+
+@media (max-width: 480px) {
+   .form-container {
+       padding: 1.5rem;
+   }
+
+   .form-container h2 {
+       font-size: 1.25rem;
+   }
+   
+}

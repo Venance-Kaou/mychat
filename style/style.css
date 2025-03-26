@@ -1,0 +1,184 @@
+body{
+     /*  Réalisé par Venance KAOU */
+
+     margin: 0px;
+     padding: 0px;
+     background: #1877f2;
+     height: 100vh;
+
+}
+
+.user {
+     /* display: flex; */
+     /* align-content: center; */
+}
+
+.user1 {
+     /* text-align: center; */
+}
+
+.chat{
+     background-color: white;
+     border-radius: 6px;
+     padding:15px;
+     box-shadow: 0 0 10px  rgba(0,0,0,0.1);
+     width: 320px;
+     height: auto;
+     margin: 100px auto;
+}
+.user_account{
+     padding: auto;
+     display: flex;
+     align-content: center;
+     justify-content: space-between;
+     margin: 5px 5px;
+}
+.user_account span{
+     font-size: 18px;
+     font-weight: bolder;
+     text-transform:capitalize;
+     color: rgb(50, 167, 4);
+}
+
+.user_account button {
+     background-color: #00f;
+     border-radius:50px ;
+     border: 1px solid #00f;
+     color: #fff;
+     padding: 1px;
+}
+
+.user_account button :hover {
+    transition: 0.8s;
+     padding: 2px;
+}
+
+.user_account button a {
+     color: #fff;
+     font-weight: bolder;
+     text-decoration: none;
+}
+
+.chat_box{ 
+    min-height: 300px;
+    max-height: 300px;
+    max-width: 320px;
+    padding: 6px 3px;
+    overflow: auto;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    margin: 0px auto;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.chat_box .chargement_du_message {
+     color: rgb(41, 180, 41);
+     font-weight: bolder;
+     padding: 5px 5px;
+     display: flex;
+     justify-content: center;
+}
+
+.my_message {
+     border: 1px solid rgba(0, 0, 255, 0.2);
+     box-shadow: 0 0 2px #1877f2;
+     border-radius: 10px 0px 10px 10px;
+     font-size: 14px; 
+     /* width:  280px;  */
+     width:  92%; 
+     padding: 0px 5px;
+     margin-top: 6px;   
+     margin-right: auto;
+     background-color: #fbfcfd;
+}
+
+.my_message .spane {
+     color: #575050;
+     margin-bottom: 0px;
+     font-weight: bold;
+     margin-top: 0px;
+     padding: 0px;
+     font-size: 12px;
+     text-align: start;
+     display: flex;
+     justify-content:end;
+
+}
+.my_message p {
+     text-align: start;
+     margin: auto;
+     padding:3px;
+     color: #000;
+     font-size: 16px;
+     width: 96%;
+
+}
+
+.other_message{ 
+     /* border: 1px solid rgba(0, 0, 0, 0.1); */
+     box-shadow: 0 0 2px #b4b2b2 ;
+     border-radius: 10px 10px 10px 0px;
+     font-size:14px;
+     width: 92%;
+     padding: 0px 5px;
+     margin-top: 6px;   
+     background-color: #ece9e9;
+     margin-left: auto;
+}
+
+.other_message .spane {
+     color: #575050;
+     font-weight: bold;
+     margin-bottom: 0px;
+     margin-top: 0px;
+     padding-top: 0px;
+     font-size: 12px;
+     text-align: start;
+     display: flex;
+     justify-content:end;
+}
+
+.other_message p{
+     text-align: start;
+     margin: auto;
+     padding:0 3px;
+     color: #000;
+     font-size: 16px;
+     width: 96%;
+}
+
+.send_message{
+     display: flex;
+     flex-direction: column;
+     padding: 6px;
+}
+
+.send_message textarea {
+resize: none;
+border: 2px solid rgba(0, 0, 255, 0.4);
+border-radius: 6px ;
+padding: 5px;
+outline: 0;
+}
+
+.send_message input[type='submit']{
+     border: 1px solid #1877f2;
+     background-color: #1877f2;
+     padding:6px;
+     cursor: pointer;
+     border-radius: 6px;
+     margin-top: 4px;
+     color: #fff;
+     font-size: 12px;
+     font-weight: bold;
+
+}
+.chat_box .auteur_du_message {
+     font-size: 14px;
+     font-weight: bolder;
+     text-transform:capitalize;
+     color:#1877f2;
+     display: flex;
+     margin:auto;
+     justify-content: start;
+     padding: 0px;
+}
