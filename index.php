@@ -1,4 +1,6 @@
 <?php 
+//Venance KAOU
+
      //Démarrer la session
      session_start();
      //si l'utilisateur n'est pas connecté , redirection vers la page de connexion
@@ -72,6 +74,9 @@
           //      chat.display = 'none';
           // };
 
+          // const  = document.querySelector('.chat_box');
+
+
           var chat_box = document.querySelector('.chat_box');
                setInterval(function(){
                var xhr = new XMLHttpRequest();
@@ -83,6 +88,7 @@
                xhr.open("GET", "messages.php",true )
                xhr.send()
               }, 500)  //recharger la page tous les 500 ms
+
      </script>
 
 </body>

@@ -1,20 +1,11 @@
 body{
-     /*  Réalisé par Venance KAOU */
+     /* Venance KAOU */
 
      margin: 0px;
      padding: 0px;
      background: #1877f2;
-     height: 100vh;
+     /* background: #9cbeeb; */
 
-}
-
-.user {
-     /* display: flex; */
-     /* align-content: center; */
-}
-
-.user1 {
-     /* text-align: center; */
 }
 
 .chat{
@@ -34,23 +25,24 @@ body{
      margin: 5px 5px;
 }
 .user_account span{
-     font-size: 18px;
-     font-weight: bolder;
+     font-size: 20px;
+     font-weight: bold;
      text-transform:capitalize;
-     color: rgb(50, 167, 4);
+     color: rgb(16, 16, 250);
 }
 
 .user_account button {
-     background-color: #00f;
-     border-radius:50px ;
-     border: 1px solid #00f;
+     background-color: rgb(236, 29, 14);
+     border-radius:200px ;
+     border: none;
+     font-size: 12px;
      color: #fff;
-     padding: 1px;
+     padding:0 8px;
 }
 
 .user_account button :hover {
-    transition: 0.8s;
-     padding: 2px;
+    transition: 0.4s;
+     padding: 1px;
 }
 
 .user_account button a {
@@ -60,22 +52,27 @@ body{
 }
 
 .chat_box{ 
-    min-height: 300px;
+    min-height: 250px;
     max-height: 300px;
     max-width: 320px;
-    padding: 6px 3px;
+    padding: 6px 4px;
     overflow: auto;
     border-top: 2px solid rgba(0, 0, 0, 0.3);
     margin: 0px auto;
     border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    
 }
 
 .chat_box .chargement_du_message {
-     color: rgb(41, 180, 41);
+     color: rgb(14, 177, 14);
      font-weight: bolder;
-     padding: 5px 5px;
-     display: flex;
-     justify-content: center;
+     text-align:center;
+     margin-top:50px;
+     font-size: 20px;
+
 }
 
 .my_message {
@@ -88,15 +85,15 @@ body{
      padding: 0px 5px;
      margin-top: 6px;   
      margin-right: auto;
-     background-color: #fbfcfd;
+     background-color: #1877f2;
 }
 
 .my_message .spane {
-     color: #575050;
+     color: #fff;
      margin-bottom: 0px;
      font-weight: bold;
-     margin-top: 0px;
-     padding: 0px;
+     margin-top: 8px;
+     padding: 0;
      font-size: 12px;
      text-align: start;
      display: flex;
@@ -105,31 +102,31 @@ body{
 }
 .my_message p {
      text-align: start;
-     margin: auto;
+     margin:6px;
      padding:3px;
-     color: #000;
+     color: #fff;
      font-size: 16px;
      width: 96%;
 
 }
 
 .other_message{ 
-     /* border: 1px solid rgba(0, 0, 0, 0.1); */
+     border: 1.5px solid rgba(0, 0, 255, 0.2);
      box-shadow: 0 0 2px #b4b2b2 ;
      border-radius: 10px 10px 10px 0px;
      font-size:14px;
      width: 92%;
      padding: 0px 5px;
      margin-top: 6px;   
-     background-color: #ece9e9;
+     background-color: #d4cbcb;
      margin-left: auto;
 }
 
 .other_message .spane {
-     color: #575050;
+     color: #000;
      font-weight: bold;
      margin-bottom: 0px;
-     margin-top: 0px;
+     margin-top: 8px;
      padding-top: 0px;
      font-size: 12px;
      text-align: start;
@@ -139,7 +136,7 @@ body{
 
 .other_message p{
      text-align: start;
-     margin: auto;
+     margin: 4px;
      padding:0 3px;
      color: #000;
      font-size: 16px;
@@ -158,6 +155,7 @@ border: 2px solid rgba(0, 0, 255, 0.4);
 border-radius: 6px ;
 padding: 5px;
 outline: 0;
+text-align: center;
 }
 
 .send_message input[type='submit']{
@@ -176,9 +174,9 @@ outline: 0;
      font-size: 14px;
      font-weight: bolder;
      text-transform:capitalize;
-     color:#1877f2;
+     color:rgb(4, 4, 223);
      display: flex;
-     margin:auto;
+     margin:2px 0 2px 8px;
      justify-content: start;
      padding: 0px;
 }

@@ -1,7 +1,9 @@
+/* Venance KAOU */
+
 body {
+  
     font-family: arial, sans-serif ;
     background-color: #d1d1d4;
-    /* background-color: #1877f2; */
     display: flex;
     justify-content: center;
     align-items: center;

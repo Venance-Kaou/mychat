@@ -1,5 +1,5 @@
 <?php
-// Réalisé par Venance KAOU
+//Venance KAOU
 
 try{
      $bdd = new PDO('mysql:host=localhost; dbname=mychat','root','',

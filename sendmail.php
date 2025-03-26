@@ -1,5 +1,5 @@
 <?php 
-//Réalisé par Venance KAOU
+//Venance KAOU
 
 
 //Envoie d'un code de confirmation en local à l'utilisateur avec MailDev

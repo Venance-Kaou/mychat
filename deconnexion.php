@@ -1,5 +1,5 @@
 <?php
-// Réalisé par Venance KAOU
+//Venance KAOU
 
      session_start();
      session_destroy();

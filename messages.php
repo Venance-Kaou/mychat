@@ -1,5 +1,5 @@
 <?php  
-//Réalisé par Venance KAOU
+//Venance KAOU
 
  //Démarrer la session pour pouvoir afficher les messages 
  session_start();

@@ -1,4 +1,4 @@
-// Réalisé par Venance KAOU
+//Venance KAOU
 
 //SCRIPT SUR LA PAGE D'INSCRIPTION
 
