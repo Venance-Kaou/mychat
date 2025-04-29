@@ -39,7 +39,7 @@
     }
 
     //Lorsque l'utilisateur clique sur le bouton de changement de mot de passe
-    if(isset ($_POST['btn_forgot_password'])) {
+    if(isset ($_POST['btn_forgot_password'])){
         //connecter notre base de données
         include('connexion_bdd.php');
         //extraire les infos de notre formulaire
